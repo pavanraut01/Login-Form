@@ -1,0 +1,104 @@
+/* General reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set a full-screen background image */
+  body {
+    font-family: Arial, sans-serif;
+   
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Styling for the login form container */
+  .login-form {
+    background-color: rgba(255, 255, 255, 0.9); /* Transparent background */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+  /* Heading styling */
+  .login-form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for labels */
+  .login-form label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  /* Input field styling */
+  .login-form input[type="text"],
+  .login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  /* Checkbox styling */
+  .login-form input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  /* Error message styling */
+  .error {
+    color: red;
+    font-size: 12px;
+  }
+  
+  /* Button styling */
+  .login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  /* Styling for "Forgot Password?" and "Create New Account" buttons */
+  .login-form button:nth-child(2),
+  .login-form button:nth-child(3) {
+    background-color: #f0f0f0;
+    color: #333;
+    margin-top: 5px;
+  }
+  
+  .login-form button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Success message after login */
+  .login-form p {
+    margin-top: 20px;
+    color: green;
+    text-align: center;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 600px) {
+    .login-form {
+      width: 90%;
+    }
+  }
+  
